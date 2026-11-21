@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Risk Report | Digi Footprint</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="risk-result-body">
+
+    <nav class="navbar">
+        <div class="logo"> Digi Footprint</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#features">Features</a>
+        </div>
+    </nav>
+
+    <main class="risk-result-page">
+
+        <header class="risk-page-heading">
+            <h1>Privacy Risk Report</h1>
+            <p>Analysis of potentially sensitive information in your file</p>
+        </header>
+
+        <div class="risk-file-details">
+            <span><strong>File:</strong> {{ filename }}</span>
+            <span><strong>Size:</strong> {{ file_size }}</span>
+        </div>
+
+        <section class="risk-summary">
+
+            <div>
+                <h2>Privacy Assessment</h2>
+                <p>{{ suggestion }}</p>
+            </div>
+
+            <div class="risk-status">
+                <span>RISK LEVEL</span>
+                <strong class="risk-level">{{ risk_level }}</strong>
+            </div>
+
+        </section>
+
+        <section class="risk-findings-section">
+
+            <div class="findings-heading">
+                <h2>Detected Privacy Information</h2>
+                <span>{{ findings|length }} findings</span>
+            </div>
+
+            {% if findings %}
+
+                <div class="risk-table">
+
+                    <div class="risk-table-header">
+                        <span>METADATA FIELD</span>
+                        <span>DETECTED VALUE</span>
+                    </div>
+
+                    {% for item in findings %}
+
+                        <div class="risk-table-row">
+                            <strong>{{ item.name }}</strong>
+                            <span>{{ item.value }}</span>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            {% else %}
+
+                <p class="no-findings">
+                    No potentially sensitive metadata was detected.
+                </p>
+
+            {% endif %}
+
+        </section>
+
+        <p class="risk-note">
+            This assessment checks available metadata only.
+            It does not guarantee that the file contains no private information.
+        </p>
+
+        <div class="risk-actions">
+            <a href="/risk-analysis" class="feature-button">
+                Analyse Another File
+            </a>
+
+            <a href="/" class="back-link">← Back to Home</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Digi Footprint | Digital Forensics Made Simple</p>
+        <p>Stay Aware. Stay Secure. </p>
+    </footer>
+
+</body>
+</html>

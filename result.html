@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analysis Results | Digi Footprint</title>
+
+    <link rel="stylesheet" href="{{ url_for('style')}}">
+
+</head>
+
+<body class="result-page">
+
+    <nav class="navbar">
+
+        <div class="logo">
+             Digi Footprint
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#features">Features</a>
+        </div>
+
+    </nav>
+
+    <section class="upload-page">
+
+        <h1>File Analysis Results</h1>
+
+        <p>Your uploaded file has been analysed.</p>
+
+        <div class="upload-box">
+
+            <h2>File Information</h2>
+
+            <p><strong>File Name:</strong> {{ filename }}</p>
+
+            <p><strong>File Type:</strong> {{ file_type }}</p>
+
+            <p><strong>File Size:</strong> {{ file_size }}</p>
+
+            <hr>
+
+            <h2>Extracted Metadata</h2>
+
+            {% if metadata %}
+
+                {% for key, value in metadata.items() %}
+
+                    <p>
+                        <strong>{{ key }}:</strong> {{ value }}
+                    </p>
+
+                {% endfor %}
+
+            {% else %}
+
+                <p>No metadata was found in this file.</p>
+
+            {% endif %}
+
+        </div>
+
+        <a href="/file-info" class="back-link">
+            ← Analyse Another File
+        </a>
+
+        <br>
+
+        <a href="/" class="back-link">
+            ← Back to Home
+        </a>
+
+    </section>
+
+    <footer>
+        <p>Digi Footprint | Digital Forensics Made Simple</p>
+        <p>Stay Aware. Stay Secure. </p>
+    </footer>
+
+</body>
+</html>

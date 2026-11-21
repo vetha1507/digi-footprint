@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>File Information & Metadata | Digi Footprint</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="file-page">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span><b>Digi</b> Footprint</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#features">Features</a>
+        </div>
+
+    </nav>
+
+
+    <section class="upload-page">
+
+        <h1>File Information & Metadata</h1>
+
+        <p>
+            Upload a file to examine its basic information
+            and available metadata.
+        </p>
+
+        <form action="/analyse-file" method="POST"
+              enctype="multipart/form-data">
+
+            <div class="upload-box">
+
+                <div class="upload-custom-icon">
+    <svg viewBox="0 0 64 64" fill="none">
+        <path d="M17 7H37L49 19V55H17V7Z"
+              stroke="currentColor" stroke-width="2.5"/>
+        <path d="M37 7V19H49"
+              stroke="currentColor" stroke-width="2.5"/>
+        <path d="M24 29H41M24 36H41"
+              stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round"/>
+        <circle cx="32" cy="45" r="5"
+                stroke="currentColor" stroke-width="2.5"/>
+    </svg>
+</div>
+
+                <h2>Select Your File</h2>
+
+                <p>Choose a file from your computer to analyse.</p>
+
+                <input type="file" name="file" accept=".jpg,.jpeg,.png,.pdf,.docx,.pptx,.xlsx" required>
+
+                <p class="supported">
+                    <p>Supported formats: JPG, PNG, PDF, DOCX, PPTX and XLSX.</p>
+                </p>
+
+            </div>
+
+            <button type="submit" class="feature-button">
+                Analyse File
+            </button>
+
+        </form>
+
+        <a href="/" class="back-link">← Back to Home</a>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-left">
+            <strong>Digi Footprint</strong>
+            <span>|</span>
+            Digital Forensics Made Simple
+        </div>
+
+        <div class="footer-right">
+            Stay Aware. Stay Secure.
+        </div>
+
+    </footer>
+
+</body>
+</html>

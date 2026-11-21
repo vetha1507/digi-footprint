@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Risk Analysis | Digi Footprint</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="risk-page">
+
+    <nav class="navbar">
+
+        <div class="logo">
+             Digi Footprint
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#features">Features</a>
+        </div>
+
+    </nav>
+
+    <section class="upload-page">
+
+        <h1>Privacy Risk Analysis</h1>
+
+        <p>
+            Upload a file to identify potentially sensitive
+            information in its available metadata.
+        </p>
+
+        <form action="/analyse-risk" method="POST"
+              enctype="multipart/form-data">
+
+            <div class="upload-box">
+
+                <div class="risk-custom-icon">
+    <svg viewBox="0 0 64 64" fill="none">
+        <path d="M32 5L52 14V28C52 41 43 52 32 58C21 52 12 41 12 28V14L32 5Z"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linejoin="round"/>
+
+        <path d="M32 17C24 17 20 23 20 31C20 38 25 44 32 44C39 44 44 38 44 31"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"/>
+
+        <path d="M26 25C26 21 29 19 32 19C35 19 38 22 38 26"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+
+        <path d="M32 25V39M26 29V35M38 29V35"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+    </svg>
+</div>
+
+                <h2>Select Your File</h2>
+
+                <p>Choose a file to examine its privacy risks.</p>
+
+                <input
+                    type="file"
+                    name="file"
+                    accept=".jpg,.jpeg,.png,.pdf,.docx,.pptx,.xlsx"
+                    required
+                >
+
+                <p class="supported">
+                    Supported: JPG, PNG, PDF, DOCX, PPTX and XLSX.
+                </p>
+
+            </div>
+
+            <button type="submit" class="feature-button">
+                Analyse Privacy Risk
+            </button>
+
+        </form>
+
+        <a href="/" class="back-link">← Back to Home</a>
+
+    </section>
+
+    <footer>
+
+        <p>Digi Footprint | Digital Forensics Made Simple</p>
+        <p>Stay Aware. Stay Secure. </p>
+
+    </footer>
+
+</body>
+</html>

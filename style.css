@@ -1,0 +1,1564 @@
+/* =====================================
+   DIGI FOOTPRINT - FINAL HOME PAGE
+   PINK & BURGUNDY THEME
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body.home-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #25172E;
+    background: linear-gradient(135deg, #FCF9FC, #F1E3ED);
+}
+
+/* HEADER */
+
+.home-page .navbar {
+    width: 100%;
+    min-height: 85px;
+    padding: 12px 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #E5C5D5;
+}
+
+.home-page .home-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.home-page .brand-shield {
+    width: 45px;
+    height: 52px;
+    background: linear-gradient(145deg, #C85A87, #761039);
+    color: white;
+    clip-path: polygon(50% 0%,95% 18%,90% 70%,50% 100%,10% 70%,5% 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.home-page .brand-name {
+    font-size: 27px;
+    font-weight: 700;
+    color: #78133D;
+}
+
+.home-page .brand-name span {
+    color: #A52C5D;
+}
+
+.home-page .brand-divider,
+.home-page .nav-links {
+    display: none;
+}
+
+.home-page .brand-tagline {
+    font-size: 10px;
+    font-weight: 600;
+    color: #6D4355;
+    letter-spacing: 1px;
+}
+
+/* HERO */
+
+.home-page .hero {
+    width: 100%;
+    flex: 1;
+    min-height: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: 35px 8%;
+    position: relative;
+    background:
+        radial-gradient(circle at 80% 45%, rgba(192,77,127,0.20), transparent 40%),
+        linear-gradient(110deg, #FCF9FC, #F2E3ED);
+}
+
+.home-page .hero-content {
+    flex: 1;
+    max-width: 590px;
+    z-index: 2;
+}
+
+.home-page .hero-label {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 1px solid #A62A5A;
+    border-radius: 30px;
+    color: #81153F;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.home-page .hero h1 {
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.12;
+    color: #19152E;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.home-page .hero h1 span {
+    display: block;
+    color: #941B50;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.home-page .hero h2 {
+    font-size: clamp(17px, 1.8vw, 23px);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #30243A;
+}
+
+.home-page .hero h2 em {
+    color: #941B50;
+}
+
+.home-page .hero p {
+    max-width: 480px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #514656;
+    margin-bottom: 18px;
+}
+
+.home-page .hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    color: #80123F;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.home-page .hero-actions {
+    display: none !important;
+}
+
+/* HERO IMAGE */
+
+.home-page .hero-visual {
+    flex: 1;
+    max-width: 490px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-page .image-glow {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: #D95B97;
+    filter: blur(85px);
+    opacity: 0.25;
+    border-radius: 50%;
+}
+
+.home-page .hero-visual img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 20px rgba(137,22,73,0.18));
+}
+
+/* FEATURES */
+
+.home-page .features {
+    width: 100%;
+    padding: 25px 8% 35px;
+    background: transparent;
+}
+
+.home-page .section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.home-page .section-heading span {
+    flex: 1;
+    max-width: 180px;
+    height: 1px;
+    background: #B76B8C;
+}
+
+.home-page .section-heading h2 {
+    color: #25172E;
+    font-size: clamp(21px, 2.2vw, 28px);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.home-page .section-heading h2 strong {
+    color: #941B50;
+}
+
+.home-page .feature-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+}
+
+.home-page .feature-card {
+    flex: 1;
+    max-width: 470px;
+    min-height: 155px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 22px 26px;
+    background: linear-gradient(135deg, #FFFFFF, #F1DCE8);
+    border: 1px solid #E8C8D9;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(100,36,72,0.12);
+    transition: 0.3s;
+}
+
+.home-page .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(145,27,78,0.18);
+}
+
+.home-page .feature-icon {
+    width: 65px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 43px;
+}
+
+.home-page .feature-content {
+    flex: 1;
+}
+
+.home-page .feature-card h3 {
+    color: #78133D;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.home-page .feature-card p {
+    color: #514656;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.home-page .feature-divider {
+    display: none;
+}
+
+.home-page .feature-button {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 25px;
+    background: linear-gradient(110deg, #BD477B, #861440);
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.home-page .feature-button:hover {
+    background: #D16A99;
+}
+
+/* FOOTER */
+
+.home-page footer {
+    width: 100%;
+    min-height: 58px;
+    padding: 12px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(100deg, #F1DCE8, #E8C8D9);
+    border-top: 1px solid #D8A9BF;
+    color: #5B344A;
+    font-size: 11px;
+}
+
+.home-page .footer-left strong,
+.home-page .footer-left span,
+.home-page .footer-right {
+    color: #861440;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .home-page .hero {
+        padding: 30px 5%;
+        gap: 15px;
+    }
+
+    .home-page .hero-visual {
+        height: 300px;
+    }
+
+    .home-page .feature-container {
+        gap: 15px;
+    }
+
+    .home-page .feature-card {
+        padding: 17px;
+        gap: 12px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .home-page .navbar {
+        min-height: 75px;
+    }
+
+    .home-page .brand-name {
+        font-size: 23px;
+    }
+
+    .home-page .brand-tagline {
+        display: none;
+    }
+
+    .home-page .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 22px 20px;
+        gap: 10px;
+    }
+
+    .home-page .hero-content {
+        width: 100%;
+    }
+
+    .home-page .hero h1 {
+        font-size: 38px;
+    }
+
+    .home-page .hero-points {
+        justify-content: center;
+    }
+
+    .home-page .hero-visual {
+        width: 100%;
+        height: 240px;
+    }
+
+    .home-page .features {
+        padding: 25px 20px;
+    }
+
+    .home-page .section-heading {
+        gap: 8px;
+    }
+
+    .home-page .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .home-page .feature-container {
+        flex-direction: column;
+    }
+
+    .home-page .feature-card {
+        width: 100%;
+        max-width: none;
+        min-height: 130px;
+    }
+
+    .home-page footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 7px;
+    }
+}
+
+/* =====================================
+   DESKTOP - FIT EVERYTHING IN ONE SCREEN
+===================================== */
+
+@media (min-width: 901px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body.home-page {
+        height: 100vh;
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    .home-page .navbar {
+        min-height: 70px;
+        padding: 8px 7%;
+        flex-shrink: 0;
+    }
+
+    .home-page .hero {
+        flex: 1;
+        min-height: 0;
+        padding: 15px 7%;
+        gap: 25px;
+    }
+
+    .home-page .hero-label {
+        margin-bottom: 10px;
+        padding: 6px 13px;
+    }
+
+    .home-page .hero h1 {
+        font-size: clamp(34px, 3.8vw, 52px);
+        margin-bottom: 10px;
+    }
+
+    .home-page .hero h2 {
+        font-size: clamp(16px, 1.5vw, 21px);
+        margin-bottom: 8px;
+    }
+
+    .home-page .hero p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .home-page .hero-visual {
+        height: min(38vh, 310px);
+    }
+
+    .home-page .features {
+        flex-shrink: 0;
+        padding: 12px 7% 18px;
+    }
+
+    .home-page .section-heading {
+        margin-bottom: 12px;
+    }
+
+    .home-page .feature-card {
+        min-height: 125px;
+        padding: 15px 20px;
+    }
+
+    .home-page footer {
+        min-height: 48px;
+        padding: 8px 7%;
+        flex-shrink: 0;
+    }
+}
+
+/* =====================================
+   REFERENCE STYLE - PINK & BURGUNDY
+   BACKGROUND + HERO IMAGE GLOW
+===================================== */
+
+/* Overall Background */
+body.home-page {
+    background:
+        linear-gradient(
+            135deg,
+            #F4E1EB 0%,
+            #EBC9DB 50%,
+            #F5E5EE 100%
+        );
+}
+
+/* Hero Background */
+.home-page .hero {
+    background:
+        radial-gradient(
+            ellipse at 78% 48%,
+            rgba(219, 65, 135, 0.30),
+            transparent 48%
+        ),
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 255, 255, 0.75),
+            transparent 45%
+        ),
+        repeating-linear-gradient(
+            135deg,
+            rgba(255,255,255,0.10) 0px,
+            rgba(255,255,255,0.10) 2px,
+            transparent 2px,
+            transparent 24px
+        ),
+        linear-gradient(
+            115deg,
+            #F4DDE9,
+            #E9C1D5,
+            #DFAAC6
+        );
+}
+
+/* Hero Image Glow */
+.home-page .image-glow {
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(
+        circle,
+        #E65B9C 0%,
+        rgba(190, 30, 100, 0.40) 42%,
+        transparent 75%
+    );
+    filter: blur(65px);
+    opacity: 0.55;
+}
+
+/* Blend Hero Image */
+.home-page .hero-visual img {
+    filter:
+        drop-shadow(0 0 18px rgba(190, 30, 100, 0.28))
+        drop-shadow(0 12px 25px rgba(100, 20, 60, 0.22));
+}
+
+/* Features Background Continuity */
+.home-page .features {
+    background: linear-gradient(
+        110deg,
+        #E9C1D5,
+        #F2DCE8,
+        #EBC9DB
+    );
+}
+/* =====================================
+   ROUNDED & FRIENDLY FONT STYLE
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+.home-page {
+    font-family: 'Outfit', sans-serif;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page p,
+.home-page a,
+.home-page .brand-name,
+.home-page .brand-tagline,
+.home-page .hero-label,
+.home-page .hero-points,
+.home-page footer {
+    font-family: 'Outfit', sans-serif;
+}
+/* =====================================
+   FILE ANALYSIS - PINK & BURGUNDY THEME
+===================================== */
+
+body.file-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    color: #25172E;
+    background: linear-gradient(
+        135deg,
+        #F4E1EB,
+        #EBC9DB,
+        #F5E5EE
+    );
+}
+
+/* HEADER */
+.file-page .navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #E5C5D5;
+}
+
+.file-page .logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #78133D;
+}
+
+.file-page .logo-icon {
+    margin-right: 8px;
+}
+
+.file-page .nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.file-page .nav-links a {
+    text-decoration: none;
+    color: #78133D;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* UPLOAD SECTION */
+.file-page .upload-page {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.file-page .upload-page h1 {
+    color: #78133D;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.file-page .upload-page > p {
+    color: #514656;
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+
+/* UPLOAD BOX */
+.file-page .upload-box {
+    width: min(100%, 520px);
+    padding: 35px 25px;
+    background: linear-gradient(135deg, #FFFFFF, #F4E1EB);
+    border: 2px dashed #C85A87;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(100,36,72,0.12);
+}
+
+.file-page .upload-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.file-page .upload-box h2 {
+    color: #861440;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.file-page .upload-box p {
+    color: #6D4355;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.file-page .upload-box input[type="file"] {
+    max-width: 100%;
+    padding: 12px;
+    background: #F8EAF1;
+    border: 1px solid #D8A9BF;
+    border-radius: 10px;
+    color: #78133D;
+}
+
+.file-page .supported {
+    margin-top: 16px;
+}
+
+/* BUTTON */
+.file-page .feature-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(110deg, #BD477B, #861440);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.file-page .feature-button:hover {
+    background: #D16A99;
+    transform: translateY(-2px);
+}
+
+/* BACK LINK */
+.file-page .back-link {
+    margin-top: 22px;
+    color: #861440;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* FOOTER */
+.file-page footer {
+    width: 100%;
+    min-height: 58px;
+    padding: 12px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(100deg, #F1DCE8, #E8C8D9);
+    border-top: 1px solid #D8A9BF;
+    color: #861440;
+    font-size: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .file-page .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .file-page .nav-links {
+        gap: 18px;
+    }
+
+    .file-page .upload-page h1 {
+        font-size: 25px;
+    }
+
+    .file-page footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+/* RESULT PAGE - PINK & BURGUNDY THEME */
+
+body.result-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    color: #25172E;
+    background: linear-gradient(135deg, #F4E1EB, #EBC9DB, #F5E5EE);
+}
+
+.result-page .navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,.9);
+    border-bottom: 1px solid #E5C5D5;
+}
+
+.result-page .logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #78133D;
+}
+
+.result-page .nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.result-page .nav-links a {
+    text-decoration: none;
+    color: #78133D;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.result-page .upload-page {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.result-page .upload-page h1 {
+    color: #78133D;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.result-page .upload-page > p {
+    color: #514656;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.result-page .upload-box {
+    width: min(100%, 650px);
+    padding: 30px;
+    background: linear-gradient(135deg, #FFFFFF, #F4E1EB);
+    border: 1px solid #D8A9BF;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(100,36,72,.12);
+    text-align: left;
+}
+
+.result-page .upload-box h2 {
+    color: #861440;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.result-page .upload-box p {
+    color: #514656;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.result-page .upload-box strong {
+    color: #78133D;
+}
+
+.result-page .upload-box hr {
+    border: none;
+    border-top: 1px solid #DDB8CB;
+    margin: 22px 0;
+}
+
+.result-page .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #861440;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.result-page .back-link:hover {
+    color: #BD477B;
+}
+
+.result-page footer {
+    width: 100%;
+    min-height: 58px;
+    padding: 12px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(100deg, #F1DCE8, #E8C8D9);
+    border-top: 1px solid #D8A9BF;
+    color: #861440;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    .result-page .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .result-page .nav-links {
+        gap: 18px;
+    }
+
+    .result-page .upload-page h1 {
+        font-size: 25px;
+    }
+
+    .result-page .upload-box {
+        padding: 22px 18px;
+    }
+
+    .result-page footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+body.result-page {
+    background: linear-gradient(135deg, #F4E1EB, #EBC9DB, #F5E5EE) !important;
+}
+
+/* SAME NUNITO FONT FOR ALL PAGES */
+
+body.home-page,
+body.file-page,
+body.result-page {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.file-page *,
+.result-page * {
+    font-family: 'Nunito', sans-serif;
+}
+/* =====================================
+   PRIVACY RISK ANALYSIS PAGE
+   PINK & BURGUNDY THEME
+===================================== */
+
+body.risk-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    color: #25172E;
+    background: linear-gradient(
+        135deg,
+        #D982AC,
+        #C85A87,
+        #FFFFFF
+    );
+}
+
+/* HEADER */
+
+.risk-page .navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid #E5C5D5;
+}
+
+.risk-page .logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #78133D;
+}
+
+.risk-page .nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.risk-page .nav-links a {
+    text-decoration: none;
+    color: #78133D;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* MAIN SECTION */
+
+.risk-page .upload-page {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.risk-page .upload-page h1 {
+    color: #78133D;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.risk-page .upload-page > p {
+    color: #514656;
+    font-size: 15px;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+/* UPLOAD BOX */
+
+.risk-page .upload-box {
+    width: min(100%, 520px);
+    padding: 35px 25px;
+    background: linear-gradient(
+        135deg,
+        #FFFFFF,
+        #F4E1EB
+    );
+    border: 2px dashed #C85A87;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(100,36,72,0.12);
+}
+
+.risk-page .upload-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.risk-page .upload-box h2 {
+    color: #861440;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.risk-page .upload-box p {
+    color: #6D4355;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.risk-page .upload-box input[type="file"] {
+    max-width: 100%;
+    padding: 12px;
+    background: #F8EAF1;
+    border: 1px solid #D8A9BF;
+    border-radius: 10px;
+    color: #78133D;
+}
+
+.risk-page .supported {
+    margin-top: 16px;
+}
+
+/* BUTTON */
+
+.risk-page .feature-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(
+        110deg,
+        #BD477B,
+        #861440
+    );
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.risk-page .feature-button:hover {
+    background: #D16A99;
+    transform: translateY(-2px);
+}
+
+/* BACK LINK */
+
+.risk-page .back-link {
+    margin-top: 22px;
+    color: #861440;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+.risk-page footer {
+    width: 100%;
+    min-height: 58px;
+    padding: 12px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        100deg,
+        #E9B4CB,
+        #D98BAF
+    );
+    border-top: 1px solid #D8A9BF;
+    color: #861440;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .risk-page .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .risk-page .nav-links {
+        gap: 18px;
+    }
+
+    .risk-page .upload-page h1 {
+        font-size: 25px;
+    }
+
+    .risk-page .upload-box {
+        padding: 25px 18px;
+    }
+
+    .risk-page footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+/* SAME FONT AS HOME PAGE */
+
+.risk-page,
+.risk-page * {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* =================================
+   RISK ANALYSIS RESULT PAGE
+================================= */
+
+body.risk-result-body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif !important;
+    color: #321629;
+
+    background: linear-gradient(
+        135deg,
+        #D982AC 0%,
+        #C85A87 50%,
+        #A83266 100%
+    );
+}
+
+/* Navbar */
+
+.risk-result-body .navbar {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(80, 15, 45, 0.12);
+}
+
+.risk-result-body .logo {
+    color: #861440;
+    font-weight: 900;
+}
+
+.risk-result-body .nav-links a {
+    color: #861440;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: 700;
+}
+
+/* Main content */
+
+.risk-result-body .risk-result-page {
+    width: 88%;
+    max-width: 1050px;
+    margin: 35px auto;
+    flex: 1;
+}
+
+/* Heading */
+
+.risk-result-body .risk-page-heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.risk-result-body .risk-page-heading h1 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.risk-result-body .risk-page-heading p {
+    color: #FFF0F6;
+    font-size: 16px;
+}
+
+/* File details */
+
+.risk-result-body .risk-file-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.22);
+    color: white;
+    padding: 15px 22px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+/* Assessment card */
+
+.risk-result-body .risk-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: #FFF8FC;
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(75, 10, 40, 0.12);
+    margin-bottom: 22px;
+}
+
+.risk-result-body .risk-summary h2 {
+    color: #861440;
+    margin-top: 0;
+}
+
+.risk-result-body .risk-summary p {
+    color: #594653;
+    line-height: 1.6;
+}
+
+/* Risk level */
+
+.risk-result-body .risk-status {
+    min-width: 150px;
+    text-align: center;
+    background: #F5DCE9;
+    padding: 18px;
+    border-radius: 15px;
+}
+
+.risk-result-body .risk-status span {
+    display: block;
+    color: #78133D;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.risk-result-body .risk-level {
+    display: block;
+    color: #A83266;
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 8px;
+}
+
+/* Findings section */
+
+.risk-result-body .risk-findings-section {
+    background: #FFF8FC;
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(75, 10, 40, 0.12);
+}
+
+.risk-result-body .findings-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.risk-result-body .findings-heading h2 {
+    color: #861440;
+    font-size: 21px;
+}
+
+.risk-result-body .findings-heading span {
+    background: #EBC9DB;
+    color: #78133D;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* Metadata table */
+
+.risk-result-body .risk-table {
+    border: 1px solid #EBC9DB;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.risk-result-body .risk-table-header,
+.risk-result-body .risk-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 15px;
+    padding: 15px 18px;
+    overflow-wrap: anywhere;
+}
+
+.risk-result-body .risk-table-header {
+    background: #A83266;
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.risk-result-body .risk-table-row {
+    background: #FFF8FC;
+    border-bottom: 1px solid #F0D9E5;
+    color: #51404B;
+}
+
+.risk-result-body .risk-table-row:last-child {
+    border-bottom: none;
+}
+
+.risk-result-body .risk-table-row strong {
+    color: #861440;
+}
+
+/* No findings */
+
+.risk-result-body .no-findings {
+    background: #F5E5EE;
+    color: #78133D;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Note */
+
+.risk-result-body .risk-note {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+/* Buttons */
+
+.risk-result-body .risk-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.risk-result-body .risk-actions .feature-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #861440, #A83266);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 5px 15px rgba(80, 15, 45, 0.2);
+}
+
+.risk-result-body .risk-actions .back-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* Footer */
+
+.risk-result-body footer {
+    margin-top: auto;
+    background: #F5DCE9;
+    color: #78133D;
+    text-align: center;
+    padding: 15px;
+}
+
+.risk-result-body footer p {
+    margin: 5px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 650px) {
+
+    .risk-result-body .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .risk-result-body .nav-links a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .risk-result-body .risk-result-page {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .risk-result-body .risk-page-heading h1 {
+        font-size: 27px;
+    }
+
+    .risk-result-body .risk-summary {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .risk-result-body .risk-status {
+        width: auto;
+    }
+
+    .risk-result-body .risk-findings-section {
+        padding: 18px;
+    }
+
+    .risk-result-body .findings-heading h2 {
+        font-size: 17px;
+    }
+
+    .risk-result-body .risk-table-header,
+    .risk-result-body .risk-table-row {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        padding: 13px;
+    }
+
+    .risk-result-body .risk-actions {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+/* LIGHT PINK BACKGROUND */
+
+body.file-page,
+body.result-page {
+    background-image:
+        linear-gradient(rgba(255, 220, 240, 0.25), rgba(255, 220, 240, 0.25)),
+        url("/static/light-bg.jpeg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+/* DARK PINK BACKGROUND */
+
+body.risk-page,
+body.risk-result-body {
+    background-image:
+        linear-gradient(rgba(100, 0, 45, 0.25), rgba(100, 0, 45, 0.25)),
+        url("/static/dark-bg.jpeg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+/* GLOBAL FONT STYLE */
+
+body:not(.home-page) {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+body:not(.home-page) * {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* CUSTOM HOME PAGE ICONS */
+
+.home-page .feature-icon {
+    color: #A83266;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .feature-icon svg {
+    width: 58px;
+    height: 58px;
+    display: block;
+    stroke: currentColor;
+}
+
+/* FILE UPLOAD CUSTOM ICON */
+
+.file-page .upload-custom-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A83266;
+}
+
+.file-page .upload-custom-icon svg {
+    width: 65px;
+    height: 65px;
+}
+
+/* PRIVACY RISK CUSTOM ICON */
+
+.risk-page .risk-custom-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A83266;
+}
+
+.risk-page .risk-custom-icon svg {
+    width: 65px;
+    height: 65px;
+}
+
+/* RISK ANALYSIS PAGE ONLY */
+
+body.risk-page {
+    height: 100vh !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+}
+
+body.risk-page .upload-page h1 {
+    color: #FFFFFF !important;
+}
+
+body.risk-page .upload-page > p {
+    color: #FFFFFF !important;
+}
+
+body.risk-page .back-link {
+    color: #FFFFFF !important;
+}
+
